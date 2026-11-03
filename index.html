@@ -782,31 +782,52 @@
 
 <footer id="footer" class="footer">
 
-  <!-- Newsletter -->
-  <div class="footer-newsletter">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-6">
-          <h4>Dapatkan Informasi Terbaru</h4>
-          <p>
-            Ikuti informasi terbaru mengenai produk,
-            layanan, dan perkembangan PT SGI Tools Manufacturing.
-          </p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form">
-              <input type="email" name="email" placeholder="Masukkan email Anda">
-              <input type="submit" value="Berlangganan">
-            </div>
-            <div class="loading">Memuat...</div>
-            <div class="error-message"></div>
-            <div class="sent-message">
-              Terima kasih telah berlangganan!
-            </div>
-          </form>
-        </div>
+  
+<!-- Newsletter -->
+<div class="footer-newsletter">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-6">
+        <h4>Dapatkan Informasi Terbaru</h4>
+        <p>
+          Ikuti informasi terbaru mengenai produk,
+          layanan, dan perkembangan PT SGI Tools Manufacturing.
+        </p>
+
+        <form action="https://formsubmit.co/mulianinofi@gmail.com"
+              method="POST"
+              class="php-email-form">
+
+          <!-- Pengaturan Email -->
+          <input type="hidden" name="_subject"
+                 value="Pelanggan Baru Newsletter PT SGI Tools Manufacturing">
+
+          <input type="hidden" name="_captcha" value="true">
+
+          <div class="newsletter-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Masukkan email Anda"
+              required
+            >
+
+            <input type="submit" value="Berlangganan">
+          </div>
+
+          <div class="loading">Memuat...</div>
+          <div class="error-message"></div>
+
+          <div class="sent-message">
+            Terima kasih telah berlangganan!
+          </div>
+
+        </form>
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- Footer utama -->
   <div class="container footer-top">
